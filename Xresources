@@ -23,6 +23,8 @@ Emacs.FontBackend:                   xft
 ! don't show that mouse pointer when it isn't used
 *pointerBlank: true
 
+!Xft.rgba: none
+
 
 !###############################################################################
 ! URxvt {{{1
@@ -60,6 +62,12 @@ URxvt*scrollBar:        False
 !###############################################################################
 ! Fonts {{{2
 !###############################################################################
+
+URxvt.font:              xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13
+URxvt.boldFont:          xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold
+URxvt.italicFont:        xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:italic
+URxvt.boldItalicFont:    xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold:italic
+
 !rxvt.font:               -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
 !URxvt.boldFont:          -adobe-helvetica-medium-r-bold--10-100-75-75-p-56-iso8859-1
 !URxvt*font:              xft:Bitstream Vera Sans Mono:size=9
@@ -83,6 +91,8 @@ URxvt*scrollBar:        False
 
 !rxvt.font:              -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
 !URxvt.boldFont:          -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
+
+!URxvt*letterSpace: -1
 
 
 !###############################################################################
@@ -154,7 +164,7 @@ URxvt*color12:  RoyalBlue
 !###############################################################################
 
 ! (Pseudo-)Transparency
-URxvt.transparent:  True
+URxvt.transparent:  False
 
 ! real transparency with URxvt
 ! crashed my X server repeatedly
