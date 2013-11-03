@@ -1,0 +1,202 @@
+
+################################################################################
+# General {{{1
+################################################################################
+
+Emacs.Scrollbars.verticalScrollBars: on
+Emacs.FontBackend:                   xft
+#Emacs.font:                          Monospace-10
+#Emacs.font:                          Bitstream Vera Sans Mono-10
+#Gvim.font:                           Bitstream Vera Sans Mono-10
+
+### Colors for bold and underlined text in Terms ###
+*colorBDMode: on
+*colorULMode: on
+
+# color bold text red and underlined text green
+*colorBD:           red
+*colorUL:           green
+
+# use login shells
+*loginShell:        true
+
+# don't show that mouse pointer when it isn't used
+*pointerBlank: true
+
+
+################################################################################
+# URxvt {{{1
+################################################################################
+
+################################################################################
+# General {{{2
+################################################################################
+
+# we want 256 colors
+#URxvt*termName: rxvt-unicode256
+URxvt*termName: rxvt-unicode-256color
+
+URxvt.secondaryScroll:  True
+URxvt.loginShell:       True
+URxvt.saveLines:        10000
+URxvt.mapAlert:         True
+URxvt.visualBell:       False
+URxvt.urgentOnBell:     True
+
+#URxvt.mapAlert:        True
+URxvt.tripleClickWords: True
+URxvt.pastableTabs:     True
+
+# scrollbar - true (default) or false
+URxvt*scrollBar:        False
+
+# scrollbar position - left=false (default) or right=true
+#URxvt*scrollBar_right: False
+
+# scrollbar style - rxvt (default), plain, next, or xterm
+#URxvt*scrollstyle:     rxvt
+
+
+################################################################################
+# Fonts {{{2
+################################################################################
+#rxvt.font:               -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
+#URxvt.boldFont:          -adobe-helvetica-medium-r-bold--10-100-75-75-p-56-iso8859-1
+#URxvt*font:              xft:Bitstream Vera Sans Mono:size=9
+#URxvt*boldFont:          xft:Bitstream Vera Sans Mono:size=12:style=Bold
+#URxvt.font:              xft:Bitstream Vera Sans Mono:pixelsize=13
+
+#URxvt.font:              xft:DejaVu Sans Mono:antialias=false:pixelsize=11
+#URxvt.boldFont:          xft:DejaVu Sans Mono:bold:antialias=false:pixelsize=11
+#URxvt.italicFont:        xft:DejaVu Sans Mono:italic:antialias=false:autohint=true:pixelsize=11
+#URxvt.boldItalicFont:    xft:DejaVu Sans Mono:bold:italic:antialias=false:autohint=true:pixelsize=11
+
+#URxvt.font:              xft:Bitstream Vera Sans Mono:size=8:antialias=false:pixelsize=10.7
+#URxvt.boldFont:          xft:Bitstream Vera Sans Mono:size=8:bold:antialias=false:pixelsize=10.7
+#URxvt.italicFont:        xft:Bitstream Vera Sans Mono:size=8:italic:antialias=false:autohint=true:pixelsize=10.7
+#URxvt.boldItalicFont:    xft:Bitstream Vera Sans Mono:size=8:bold:italic:antialias=false:autohint=true:pixelsize=10.7
+
+#URxvt.font:              xft:Monospace:size=8:antialias=false:pixelsize=10.7
+#URxvt.boldFont:          xft:Monospace:size=8:bold:antialias=false:pixelsize=10.7
+#URxvt.italicFont:        xft:Monospace:size=8:italic:antialias=false:autohint=true:pixelsize=10.7
+#URxvt.boldItalicFont:    xft:Monospace:size=8:bold:italic:antialias=false:autohint=true:pixelsize=10.7
+
+#rxvt.font:              -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
+#URxvt.boldFont:          -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
+
+
+################################################################################
+# Colors {{{2
+################################################################################
+
+URxvt.foreground:   #ffffff
+URxvt.background:   #000000
+#URxvt.foreground:   #000000
+#URxvt.background:   #ffffff
+URxvt.cursorColor:  #ffff00
+URxvt.pointerColor: #ffff00
+
+
+################################################################################
+# Color Finetuning {{{3
+################################################################################
+
+# black
+#URxvt.color0:  #676767
+#URxvt.color8:  #757575
+
+# red
+#URxvt.color1:  #ea6868
+#URxvt.color9:  #ff7272
+
+# green
+#URxvt.color2:  #abcb8d
+#URxvt.color10: #afd78a
+
+# yellow
+#URxvt.color3:  #e8ae5b
+#URxvt.color11: #ffa75d
+
+# blue
+#URxvt.color4:  #71c5f4
+#URxvt.color12: #67cde9
+
+# Replace blue folder colors with a lighter shade for clarity.
+URxvt*color4:   RoyalBlue
+URxvt*color12:  RoyalBlue
+
+# magenta
+#URxvt.color5:  #e2baf1
+#URxvt.color13: #ecaee9
+
+# cyan
+#URxvt.color6:  #21f1ea
+#URxvt.color14: #36fffc
+
+# white
+#URxvt.color7:  #f1f1f1
+#URxvt.color15: #ffffff
+
+# }}}3
+
+
+################################################################################
+# Fading {{{2
+################################################################################
+
+#URxvt.fadecolor:   #71c5f4
+#URxvt.fading:      30
+#URxvt.fadeColor:   purple
+
+
+################################################################################
+# Transparency {{{2
+################################################################################
+
+### (Pseudo-)Transparency ###
+URxvt.transparent:  True
+
+# real transparency with URxvt
+# crashed my X server repeatedly
+#URxvt*depth:       32
+#URxvt*background:  rgba:0000/0000/0000/dddd
+
+# tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+#   some nice listings are at:
+#     http://www.nisrv.com/modules.php?name=Hex_Colors
+#     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+#URxvt.tintColor: RoyalBlue
+#URxvt.tintColor: Melon
+#URxvt.tintColor: AquaMarine4
+#URxvt.tintColor: Gray38
+#URxvt.tintColor: SandyBrown
+#URxvt.tintColor: Aqua
+
+# shading - 0 to 99 darkens, 101 to 200 lightens.
+#   Don't use with tintColor; use a darker or lighter color instead.
+URxvt.shading: 40
+#URxvt.shading: 150
+
+
+################################################################################
+# Perl Extensions {{{2
+################################################################################
+
+# match urls and launch browser on click (configurable by button number)
+URxvt.perl-ext:           matcher
+URxvt.urlLauncher:        chromium
+#URxvt.matcher.button:     1
+URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+
+# launch browser for last url
+URxvt.keysym.C-Delete:    perl:matcher
+
+# rot13 conversion for selection
+URxvt.keysym.C-M-r:       perl:selection:rot13
+
+# autotransform 'file:number' to '$EDITOR file'
+URxvt.selection-autotransform.0: s/^([^:[:space:]]+):(\\d+):?$/\$EDITOR +$2 \\Q$1\\E\\x0d/
+
+# }}}2
+# }}}1
+
