@@ -25,6 +25,11 @@ Emacs.FontBackend:                   xft
 
 !Xft.rgba: none
 
+! mouse cursors
+Xcursor.theme: whiteglass
+!Xcursor.theme: gentoo
+!Xcursor.theme: redglass
+
 
 !###############################################################################
 ! URxvt {{{1
@@ -58,15 +63,21 @@ URxvt*scrollBar:        False
 ! scrollbar style - rxvt (default), plain, next, or xterm
 !URxvt*scrollstyle:     rxvt
 
+! deactivate blinking cursor
+URxvt.cursorBlink: 0
+
+! deactivate underline cursor
+URxvt.cursorUnderline: 0
+
 
 !###############################################################################
 ! Fonts {{{2
 !###############################################################################
 
-URxvt.font:              xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13
-URxvt.boldFont:          xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold
-URxvt.italicFont:        xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:italic
-URxvt.boldItalicFont:    xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold:italic
+!URxvt.font:              xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13
+!URxvt.boldFont:          xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold
+!URxvt.italicFont:        xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:italic
+!URxvt.boldItalicFont:    xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=13:bold:italic
 
 !rxvt.font:               -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
 !URxvt.boldFont:          -adobe-helvetica-medium-r-bold--10-100-75-75-p-56-iso8859-1
@@ -78,6 +89,11 @@ URxvt.boldItalicFont:    xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=
 !URxvt.boldFont:          xft:DejaVu Sans Mono:bold:antialias=false:pixelsize=11
 !URxvt.italicFont:        xft:DejaVu Sans Mono:italic:antialias=false:autohint=true:pixelsize=11
 !URxvt.boldItalicFont:    xft:DejaVu Sans Mono:bold:italic:antialias=false:autohint=true:pixelsize=11
+
+!URxvt.font:              xft:DejaVu Sans Mono for Powerline:antialias=false:pixelsize=11
+!URxvt.boldFont:          xft:DejaVu Sans Mono for Powerline:bold:antialias=false:pixelsize=11
+!URxvt.italicFont:        xft:DejaVu Sans Mono for Powerline:italic:antialias=false:autohint=true:pixelsize=11
+!URxvt.boldItalicFont:    xft:DejaVu Sans Mono for Powerline:bold:italic:antialias=false:autohint=true:pixelsize=11
 
 !URxvt.font:              xft:Bitstream Vera Sans Mono:size=8:antialias=false:pixelsize=10.7
 !URxvt.boldFont:          xft:Bitstream Vera Sans Mono:size=8:bold:antialias=false:pixelsize=10.7
@@ -93,6 +109,9 @@ URxvt.boldItalicFont:    xft:Source\ Code\ Pro\ Medium:antialias=true:pixelsize=
 !URxvt.boldFont:          -adobe-helvetica-medium-r-normal--10-100-75-75-p-56-iso8859-1
 
 !URxvt*letterSpace: -1
+
+!URxvt*font:              xft:Terminess Powerline:antialias=true:pixelsize=13
+URxvt*font:              xft:DejaVu Sans Mono for Powerline:antialias=true:size=11
 
 
 !###############################################################################
